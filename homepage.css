@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+#banner_area  {
+    background-color: black;
+    height: 100vh;
+    pointer-events: all;
+    opacity: 1;
+    background-size: contain; /* This will ensure that the lines image fits within the canvas without stretching */
+}
+#smoke_canvas {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensures it's below the image */
+}
+
+#banner_lines_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100%; /* 100% of the viewport height */
+    pointer-events: none;
+    z-index: 2; /* Ensures it's above the canvas */
+}
