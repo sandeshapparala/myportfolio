@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
 *{
     padding: 0;
     margin: 0 ;
@@ -27,4 +30,96 @@
     height: 100%; /* 100% of the viewport height */
     pointer-events: none;
     z-index: 2; /* Ensures it's above the canvas */
+}
+
+#home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+
+
+
+#title{
+    /*position : absolute;*/
+    font-size: 3em;
+    font-weight: bold; /* Makes the text bold */
+    color: #FFF4E6; /* Choose a color that stands out against your background */
+    text-shadow: 2px 2px 4px #000000; /* Optional: Adds a subtle shadow for depth */
+    text-align: center; /* Centers the text horizontally */
+    margin: 0; /* Removes default margin */
+    padding: 20px 0; /* Adds vertical padding, adjust as needed */
+    font-family: 'Lato', sans-serif; /* You can choose a different font that matches your style */
+    letter-spacing: 1px; /* Adjusts spacing between letters */
+    text-transform: uppercase; /* Optional: transforms text to uppercase for more impact */
+    transition: color 0.3s ease; /* Smooth transition for hover effects, if any */
+    z-index: 3; /* Places the text above everything else */
+    pointer-events: none;
+
+
+
+}
+
+#tagline{
+    /*position: absolute;*/
+    font-size: 2em;
+    font-weight: bold; /* Makes the text bold */
+    color: #FFFFFF; /* Choose a color that stands out against your background */
+    text-shadow: 2px 2px 4px #000000; /* Optional: Adds a subtle shadow for depth */
+    text-align: center; /* Centers the text horizontally */
+    margin: 0; /* Removes default margin */
+    padding: 20px 0; /* Adds vertical padding, adjust as needed */
+    font-family: 'droid-serif', sans-serif; /* You can choose a different font that matches your style */
+    letter-spacing: 1px; /* Adjusts spacing between letters */
+
+    transition: color 0.3s ease; /* Smooth transition for hover effects, if any */
+    z-index: 3; /* Places the text above everything else */
+    pointer-events: none;
+
+}
+
+
+#cta{
+    font-size: 2em;
+    font-weight: bold; /* Makes the text bold */
+    color: #FFFFFF; /* Choose a color that stands out against your background */
+    text-shadow: 2px 2px 4px #000000; /* Optional: Adds a subtle shadow for depth */
+    text-align: center; /* Centers the text horizontally */
+    margin: 0; /* Removes default margin */
+    padding: 20px 0; /* Adds vertical padding, adjust as needed */
+    font-family: 'pr', sans-serif; /* You can choose a different font that matches your style */
+    letter-spacing: 1px; /* Adjusts spacing between letters */
+
+    transition: color 0.3s ease; /* Smooth transition for hover effects, if any */
+    z-index: 3; /* Places the text above everything else */
+    pointer-events: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------Responsive Web Design-------------------- */
+
+@media screen and (max-width: 768px) {
+    #title{
+        font-size: 2em; /* Smaller font size on smaller screens */
+    }
 }
