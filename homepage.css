@@ -7,6 +7,8 @@
 }
 
 #banner_area  {
+    top: 0;
+    position: sticky;
     background-color: black;
     height: 100vh;
     pointer-events: all;
@@ -26,7 +28,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw; /* 100% of the viewport width */
+    width: 100%; /* 100% of the viewport width */
     height: 100%; /* 100% of the viewport height */
     pointer-events: none;
     z-index: 2; /* Ensures it's above the canvas */
@@ -47,9 +49,10 @@
 
 #title{
     /*position : absolute;*/
-    font-size: 3em;
+    font-size: 6vw;
+
     font-weight: bold; /* Makes the text bold */
-    color: #FFF4E6; /* Choose a color that stands out against your background */
+    color: #fdbf00; /* Choose a color that stands out against your background */
     text-shadow: 2px 2px 4px #000000; /* Optional: Adds a subtle shadow for depth */
     text-align: center; /* Centers the text horizontally */
     margin: 0; /* Removes default margin */
@@ -67,14 +70,14 @@
 
 #tagline{
     /*position: absolute;*/
-    font-size: 2em;
+    font-size: 4vw;
     font-weight: bold; /* Makes the text bold */
     color: #FFFFFF; /* Choose a color that stands out against your background */
     text-shadow: 2px 2px 4px #000000; /* Optional: Adds a subtle shadow for depth */
     text-align: center; /* Centers the text horizontally */
     margin: 0; /* Removes default margin */
     padding: 20px 0; /* Adds vertical padding, adjust as needed */
-    font-family: 'droid-serif', sans-serif; /* You can choose a different font that matches your style */
+    font-family: 'halvetica', sans-serif; /* You can choose a different font that matches your style */
     letter-spacing: 1px; /* Adjusts spacing between letters */
 
     transition: color 0.3s ease; /* Smooth transition for hover effects, if any */
@@ -123,3 +126,4 @@
         font-size: 2em; /* Smaller font size on smaller screens */
     }
 }
+
