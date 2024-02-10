@@ -105,6 +105,17 @@
 }
 
 
+#interaction-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire content area */
+    height: 100%;
+    z-index: 10; /* Ensure this is above your content */
+    pointer-events: none; /* Start with pointer events disabled */
+}
+
+
 
 
 
